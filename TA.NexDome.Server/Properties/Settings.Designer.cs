@@ -12,7 +12,7 @@ namespace TA.NexDome.Server.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -155,15 +155,6 @@ namespace TA.NexDome.Server.Properties {
         public global::System.IO.Ports.StopBits SerialStopBits {
             get {
                 return ((global::System.IO.Ports.StopBits)(this["SerialStopBits"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("RequestToSend")]
-        public global::System.IO.Ports.Handshake SerialHandshake {
-            get {
-                return ((global::System.IO.Ports.Handshake)(this["SerialHandshake"]));
             }
         }
         
@@ -419,6 +410,14 @@ namespace TA.NexDome.Server.Properties {
             }
             set {
                 this["ShutterWaitUntilReady"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.IO.Ports.Handshake SerialHandshake {
+            get {
+                return ((global::System.IO.Ports.Handshake)(this["SerialHandshake"]));
             }
         }
     }

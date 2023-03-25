@@ -159,6 +159,7 @@ namespace TA.NexDome.DeviceInterface
             {
             SubscribeControllerEvents();
             channel.Open();
+            System.Threading.Thread.Sleep(2000);
             stateMachine.Initialize(new RequestStatusState(stateMachine)); // Rotator
             stateMachine.Initialize(new OfflineState(stateMachine)); // Shutter
             stateMachine.WaitForReady(configuration.TimeToWaitForShutterOnConnect);

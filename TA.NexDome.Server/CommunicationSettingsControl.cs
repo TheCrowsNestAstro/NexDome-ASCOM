@@ -39,7 +39,7 @@ namespace TA.NexDome.Server
             string dtr = Settings.Default.SerialAssertDTR ? "dtr" : "nodtr";
             string rts = Settings.Default.SerialAssertRTS ? "rts" : "norts";
             string connection =
-                $"{Settings.Default.CommPortName}:{Settings.Default.SerialBaudRate},{Settings.Default.SerialParity},{Settings.Default.SerialDataBits},{Settings.Default.SerialStopBits},{dtr},{rts},{Settings.Default.SerialHandshake}";
+                $"{Settings.Default.CommPortName}:{Settings.Default.SerialBaudRate},{Settings.Default.SerialParity},{Settings.Default.SerialDataBits},{Settings.Default.SerialStopBits},{dtr},{rts}";
             Settings.Default.ConnectionString = connection;
             }
 
